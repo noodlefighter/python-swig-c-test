@@ -1,13 +1,8 @@
 # python-swig-c-test
 
-usage:
-
+test:
 ```
+$ sudo pip install pytest
 $ make
-$ python test/test_add.py
-3
-$ python test/test_acc.py
-1
-3
-6
+$ pytest ./test
 ```
