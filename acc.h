@@ -1,11 +1,19 @@
 #ifndef ACC_H
 #define ACC_H
 
-typedef struct acc {
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef struct {
     int sum;
 } acc_t;
 
-int acc_plus(struct acc *self, int num);
-int acc_clear(struct acc *self);
+int acc_plus(acc_t *self, int num);
+int acc_clear(acc_t *self);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif
