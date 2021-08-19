@@ -16,7 +16,7 @@ acc.py:
 
 acc_class.py:
 	swig -python -c++ acc_class.i
-	$(CC) $(CFLAGS) $(INCS) -o _acc_class.so acc_class.cc acc_class_wrap.cxx
+	$(CC) $(CFLAGS) $(INCS) -o _acc_class.so acc.c acc_class_wrap.cxx
 
 clean:
 	rm -f *.so *_wrap.c *_wrap.cxx *.py
